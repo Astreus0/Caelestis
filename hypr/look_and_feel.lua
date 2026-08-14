@@ -7,14 +7,20 @@ hl.config({
         border_size = 2,
 
         col = { 
-            active_border   = { colors = {"rgba(6495ED)", "rgba(4169E1)"}, angle = 5},
-            inactive_border = "rgba(ADD8E6)",
+            active_border   = {
+                 colors = {
+                       "rgba(65, 105, 225, 1.0)",
+                       "rgba(135, 206, 250, 1.0)"
+                 },
+                 angle = 5
+             },
+            inactive_border = "rgba(176, 196, 222, 1.0)",
         },
         -- Set to true for changing size window by clicking and dragging on border and gaps.
         resize_on_border = false,
 
         -- Information about this parameter: https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/
-        alow_tearing = false,
+        allow_tearing = false,
 
         layout = "dwindle",
 
@@ -22,7 +28,7 @@ hl.config({
     
     decoration = {
         rounding      = 5,
-        rouding_power = 1,
+        rounding_power = 1,
 
         --Transparency of focused and unfocused windows
         active_opacity   = 0.9,
@@ -39,7 +45,7 @@ hl.config({
             enabled = true,
             size    = 3,
             passes  = 1,
-            vbrancy = 0.1696,
+            vibrancy = 0.1696,
         },
     }, 
     animations = {
