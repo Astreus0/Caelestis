@@ -14,7 +14,7 @@ hl.config({
                  },
                  angle = 5
              },
-            inactive_border = "rgba(176, 196, 222, 1.0)",
+            inactive_border = color = "rgba(176, 196, 222, 1.0)",
         },
         -- Set to true for changing size window by clicking and dragging on border and gaps.
         resize_on_border = false,
@@ -38,7 +38,7 @@ hl.config({
             enabled      = true, 
             range        = 5,
             render_power = 3,
-            color        = "rgba (0, 0, 128, 1.0)"
+            color        = "rgba (0,0,128,1.0)"
         },
 
         blur = {
