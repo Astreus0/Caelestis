@@ -1,12 +1,12 @@
 local main_mod = "SUPER" -- Sets "Windows" key as main modifier
 local programs = require("programs")
 -- Example binds: https://wiki.hypr.land/Configuring/Basics/Binds/
-hl.bind(main_mod .. " + Return", hl.dsp.exec_cmd(terminal))
+hl.bind(main_mod .. " + Return", hl.dsp.exec_cmd(programs.terminal))
 local closeWindowBind = hl.bind(main_mod .. " + Q", hl.dsp.window.close())
 hl.bind(main_mod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
-hl.bind(main_mod .. " + E", hl.dsp.exec_cmd(file_manager))
+hl.bind(main_mod .. " + E", hl.dsp.exec_cmd(programs.file_manager))
 hl.bind(main_mod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(main_mod .. " + R", hl.dsp.exec_cmd(menu))
+hl.bind(main_mod .. " + R", hl.dsp.exec_cmd(programs.menu))
 hl.bind(main_mod .. " + P", hl.dsp.window.pseudo())
 hl.bind(main_mod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
