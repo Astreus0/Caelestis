@@ -1,6 +1,6 @@
 require("autostart")
 require("monitors")
-require("enviroment_variables")
+require("environment_variables")
 require("look_and_feel")
 require("input")
 require("keybinds")
