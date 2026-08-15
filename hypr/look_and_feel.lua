@@ -1,4 +1,5 @@
 Information about this configuration: https://wiki.hypr.land/Configuring/Basics/Variables/
+local colors = require("colors")
 hl.config({
     general = {
         gaps_in  = 5,
@@ -9,12 +10,12 @@ hl.config({
         col = { 
             active_border   = {
                  colors = {
-                       "rgba(65, 105, 225, 1.0)",
-                       "rgba(135, 206, 250, 1.0)"
+                       colors.royal_blue,
+                       colors.sky_blue
                  },
                  angle = 5
              },
-            inactive_border = "rgba(176, 196, 222, 1.0)",
+            inactive_border = colors.steel_blue,
         },
         -- Set to true for changing size window by clicking and dragging on border and gaps.
         resize_on_border = false,
@@ -27,25 +28,25 @@ hl.config({
     },
     
     decoration = {
-        rounding      = 5,
+        rounding       = 10,
         rounding_power = 1,
 
         --Transparency of focused and unfocused windows
-        active_opacity   = 0.9,
-        inactive_opacity = 0.7,
+        active_opacity   = 0.8,
+        inactive_opacity = 0.6,
     
         shadow = {
             enabled      = true, 
             range        = 5,
             render_power = 3,
-            color        = "rgba(0,0,128,1.0)"
+            color        = colors.navy_blue,
         },
 
         blur = {
             enabled = true,
             size    = 3,
-            passes  = 1,
-            vibrancy = 0.1696,
+            passes  = 2,
+            vibrancy = 0.1,
         },
     }, 
     animations = {
