@@ -32,8 +32,8 @@ hl.config({
         rounding_power = 1,
 
         --Transparency of focused and unfocused windows
-        active_opacity   = 0.8,
-        inactive_opacity = 0.6,
+        active_opacity   = 1,
+        inactive_opacity = 0.7,
     
         shadow = {
             enabled      = true, 
@@ -95,4 +95,8 @@ hl.config({
     scrolling = {
         fullscreen_on_one_column = true,
     }, 
+})
+hl.window_rule ({
+    match   = {class = "kitty"},
+    opacity = "0.9 0.7"
 })
